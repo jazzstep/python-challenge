@@ -35,6 +35,7 @@ with open(csvpath, newline="") as csvfile:
     for row in csvreader:
         #putting what is in row[0] into the list count_months
         count_months.append(row[0])
+        #net total iterating over each row to sum up the total revenue
         net_total+=int(row[1])
         #special case because the first profit/loss value doesn't have a previous value to use to find a difference with
         if counter ==1:
