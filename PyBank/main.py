@@ -64,6 +64,7 @@ with open(csvpath, newline="") as csvfile:
         counter = counter +1
     output = (
         f"\nFinancial Analysis\n"
+        f"\n------------------\n"
         f"Total Months: {len(count_months)}\n"
     #round answers to 2 decimal points using round function
         f"Average Change: {round(sum(P_L)/len(P_L),2)}\n"
